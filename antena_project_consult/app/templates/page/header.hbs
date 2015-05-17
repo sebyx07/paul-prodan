@@ -1,0 +1,41 @@
+<header class="site-header">
+    <div class="top-header hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                    <ul class="top-menu">
+                        <li>languages</li>
+                    </ul>
+                    <ul class="social-links social-links-lighter">
+                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="container for-navi">
+            <h1 class="logo">
+                {{#link-to 'home'}}<img src="images/logo.png" alt="Site Logo">{{/link-to}}
+            </h1>
+            <!-- Main Navigation -->
+            <nav class="main-navigation">
+                <ul class="sf-menu">
+                    <li>
+                      {{#link-to 'home'}}Acasă{{/link-to}}
+                    </li>
+                    <li><a>Servicii</a>
+                        <ul>
+                            <li>{{#link-to 'services.electric'}}Instalații electrice{{/link-to}}</li>
+                            <li>{{#link-to 'services.auto'}}Automatizări{{/link-to}}</li>
+                            <li>{{#link-to 'services.others'}}Altele{{/link-to}}</li>
+                        </ul>
+                    </li>
+                    <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+                </ul>
+            </nav>
+            <!-- Mobile Menu Trigger Icon -->
+            <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+</header>

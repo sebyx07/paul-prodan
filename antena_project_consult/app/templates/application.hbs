@@ -1,0 +1,31 @@
+<div class="body">
+    {{partial 'page/header'}}
+    {{partial 'page/pheader'}}
+    <!-- Start Content -->
+    <div class="main" role="main">
+        <div id="content" class="content full">
+            <div class="container">
+                {{outlet}}
+            </div>
+        </div>
+    </div>
+    <!-- Start Footer -->
+    <footer class="site-footer site-top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 footer-widget widget text_widget">
+                    <h4 class="widgettitle">Descriere</h4>
+                    <p>BLA BLA</p>
+                </div>
+                <div class="col-md-3 col-md-offset-6 col-sm-6 col-sm-offset-12 footer-widget widget text_widget">
+                    <h4 class="widgettitle">Ne gasesti in</h4>
+                    <p>Timisoara</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    {{outlet}}
+</div>
