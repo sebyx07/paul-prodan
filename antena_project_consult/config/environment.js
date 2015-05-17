@@ -9,10 +9,10 @@ module.exports = function(environment) {
 
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self'",
+      'script-src': "* 'unsafe-eval'",
       'font-src': "*",
       'connect-src': "'self'",
-      'img-src': "'self'",
+      'img-src': "*",
       'style-src': "* 'unsafe-inline'",
       'media-src': "'self'"
     },
