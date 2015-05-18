@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.View.extend({
   templateName: 'views/location',
   didInsertElement: function(){
+    var google = window.google;
     var geocoder = new google.maps.Geocoder();
     var address = "Str. Vasile Loichita nr.1-3, Timisoara Romania";
     var latitude;
@@ -11,7 +12,7 @@ export default Ember.View.extend({
 
     function getGeocode() {
       geocoder.geocode( { 'address': address}, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
+        if (status === google.maps.GeocoderStatus.OK) {
           latitude = results[0].geometry.location.lat();
           longitude = results[0].geometry.location.lng();
           initGoogleMap();
@@ -68,7 +69,7 @@ export default Ember.View.extend({
         new google.maps.LatLng(-45.75674478, -21.22987747),
         new google.maps.LatLng(45.75674478, 21.22987747));
 
-      var rect = new google.maps.Rectangle({
+      new google.maps.Rectangle({
         bounds: bounds,
         fillColor: color,
         fillOpacity: 0.2,

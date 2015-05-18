@@ -7,27 +7,27 @@
                 <div class="col-md-8">
                   {{view 'location'}}
                     <div class="spacer-20"></div>
-                    <h2>Contacteaza-ne</h2>
+                    <h2>{{t 'pages.contact.contactUs'}}</h2>
                     <div class="row">
-                        <form method="post" id="contactform" name="contactform" class="contact-form clearfix" action="mail/contact.php">
+                        <form method="post" id="contactform" name="contactform" class="contact-form clearfix">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" id="name" name="name"  class="form-control input-lg" placeholder="Nume*">
+                                    <input type="text" id="name" name="name"  class="form-control input-lg" placeholder="{{t 'pages.contact.form.name'}}*">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" id="email" name="email"  class="form-control input-lg" placeholder="Email*">
+                                    <input type="email" id="email" name="email"  class="form-control input-lg" placeholder="{{t 'pages.contact.form.email'}}*">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" id="phone" name="phone" class="form-control input-lg" placeholder="Numar telefon">
+                                    <input type="text" id="phone" name="phone" class="form-control input-lg" placeholder="{{t 'pages.contact.form.telephone'}}">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea cols="6" rows="7" id="comments" name="comments" class="form-control input-lg" placeholder="Mesaj"></textarea>
+                                    <textarea cols="6" rows="7" id="comments" name="comments" class="form-control input-lg" placeholder="{{t 'pages.contact.form.message'}}"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <input id="submit" name="submit" type="submit" class="btn btn-primary btn-lg pull-right" value="Trimite">
+                                <input id="submit" name="submit" type="submit" class="btn btn-primary btn-lg pull-right" value={{t 'pages.contact.form.send'}}>
                             </div>
                         </form>
                     </div>
@@ -37,11 +37,11 @@
                 <!-- Start Sidebar -->
                 <div class="col-md-4 sidebar right-sidebar">
                     <div class="widget sidebar-widget text_widget">
-                        <h3 class="title">Sediu principal</h3>
+                        <h3 class="title">{{t 'pages.contact.headquarters.name'}}</h3>
                         <address>
                             Timisoara
                             <br/>
-                            Str. Vasile Loichita nr.1-3, sc.D, parter, SAD 6A
+                            {{t 'pages.contact.headquarters.location'}}
                         </address>
                     </div>
                 </div>

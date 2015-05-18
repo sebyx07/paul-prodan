@@ -11,7 +11,7 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "* 'unsafe-eval'",
       'font-src': "*",
-      'connect-src': "'self'",
+      'connect-src': "*",
       'img-src': "*",
       'style-src': "* 'unsafe-inline'",
       'media-src': "'self'"
@@ -25,8 +25,7 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      defaultLocale: 'ro'
     }
   };
 

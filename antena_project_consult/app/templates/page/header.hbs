@@ -3,11 +3,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-6">
-                    <ul class="top-menu">
-                        <li>languages</li>
-                    </ul>
                     <ul class="social-links social-links-lighter">
-                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                        <li {{action 'setRoLanguage'}}><img src="images/countries/ro.png" alt=""/></li>
+                        <li {{action 'setDeLanguage'}}><img src="images/countries/de.png" alt=""/></li>
+                        <li {{action 'setEnLanguage'}}><img src="images/countries/en.png" alt=""/></li>
+                        <li></li>
+                        <li></li>
+                        <li><a target="_blank" href="https://www.facebook.com/apctm.ro"><i class="fa fa-facebook-square"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -22,16 +24,16 @@
             <nav class="main-navigation">
                 <ul class="sf-menu">
                     <li>
-                      {{#link-to 'home'}}Acasă{{/link-to}}
+                      {{#link-to 'home'}}{{t 'menu.home'}}{{/link-to}}
                     </li>
-                    <li><a>Servicii</a>
+                    <li><a>{{t 'menu.services'}}</a>
                         <ul>
-                            <li>{{#link-to 'pages.services.electric'}}Instalații electrice{{/link-to}}</li>
-                            <li>{{#link-to 'pages.services.auto'}}Automatizări{{/link-to}}</li>
-                            <li>{{#link-to 'pages.services.others'}}Altele{{/link-to}}</li>
+                            <li>{{#link-to 'pages.services.electric'}}{{t 'menu.servicesList.electric'}}{{/link-to}}</li>
+                            <li>{{#link-to 'pages.services.auto'}}{{t 'menu.servicesList.auto'}}{{/link-to}}</li>
+                            <li>{{#link-to 'pages.services.others'}}{{t 'menu.servicesList.other'}}{{/link-to}}</li>
                         </ul>
                     </li>
-                    <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+                    <li>{{#link-to 'contact'}}{{t 'menu.contact'}}{{/link-to}}</li>
                 </ul>
             </nav>
             <!-- Mobile Menu Trigger Icon -->
