@@ -11,6 +11,10 @@ export default Ember.Controller.extend({
     },
     setEnLanguage: function(){
       Ember.set(this.app, 'locale', 'en');
+    },
+
+    goToFb: function(){
+      window.location = 'https://www.facebook.com/apctm.ro';
     }
   }
 });
