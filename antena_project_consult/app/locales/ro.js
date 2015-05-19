@@ -43,7 +43,15 @@ export default {
         email: 'Email',
         telephone: 'Număr telefon',
         message: 'Mesaj',
-        send: 'Trimite'
+        send: 'Trimite',
+        errors: {
+          name: 'Numele trebuie sa aiba minim 3 caractere',
+          email: 'Emailul este incorect',
+          phone: 'Numarul de telefon este incorect',
+          message: 'Mesajul trebuie sa aiba minim 10 caractere',
+          emailFail: 'Mesajul nu a fost trimis...'
+        },
+        success: 'Mesajul a fost trimis!'
       }
     },
 

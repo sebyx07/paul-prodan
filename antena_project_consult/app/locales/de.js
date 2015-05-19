@@ -1,67 +1,74 @@
 export default {
   menu: {
-    home: 'home',
-    services: 'services',
+    home: 'Homepage',
+    services: 'Dienstleistungen',
     servicesList: {
-      electric: 'Electrical installations',
-      auto: 'Automation',
-      other: 'Others'
+      electric: 'Elektrische Anlagen ',
+      auto: 'Automatisierung',
+      other: 'Andere'
     },
-    contact: 'Contact'
+    contact: 'Kontakt'
   },
   footer: {
-    phoneNumbers: 'Phone numbers'
+    phoneNumbers: 'Telefonnummern'
   },
 
   slider: {
-    first: 'About us  ',
+    first: 'ÜBER UNS',
     second: 'ATENA PROIECT CONSULT S.R.L.-D',
-    third: 'main activity is the design of electrical installations (NACE code 4321), as',
-    forth: 'well as engineering activities and related technical consulting (NACE code 7112).'
+    third: 'ist die Konstruktion von elektrischen Anlagen (NACE-Code 4321), sowie Engineering-',
+    forth: 'Aktivitäten und zugehörige technische Beratung (NACE-Code 7112).'
   },
 
   pages: {
     home: {
-      first: 'has implemented the following systems:',
-      second: 'Quality Assurance System ISO 9001: 2008, Environmental Management System SR EN ISO 14001: 2005 (ISO ' +
-      '14001: 2004), Occupational Safety and Health Management System according to OHSAS 18001: 2007.',
-      third: 'The quality guarantee of executed works is provided by the experienced specialists at ATENA PROIECT CONSULT' +
-      ' S.R.L.- D, whose professionalism is embodied in numerous certifications and authorizations'
+      first: ' hat folgende Systeme implementiert:',
+      second: 'Qualitätssicherungssystem ISO 9001:2008',
+      third: 'Umweltmanagementsystem SR EN ISO 14001:2005 (ISO 14001:2004) Arbeitsschutzmanagementsystem ' +
+      'nach OHSAS 18001:2007'
     },
 
     contact: {
       headquarters: {
-        name: 'Headquarters',
-        location: 'Vasile Loichita street nr.1-3, ground floor, SAD 6A'
+        name: 'Hauptsitz',
+        location: 'Vasile Loichita Straße nr.1-3, Erdgeschoss, SAD 6A'
       },
-      contactUs: 'Send us a message',
+      contactUs: 'Senden Sie uns eine Nachricht',
       form: {
         name: 'Name',
         email: 'Email',
-        telephone: 'Phone number',
-        message: 'Message',
-        send: 'Send'
+        telephone: 'Telefonnummer',
+        message: 'Nachricht',
+        send: 'Senden',
+        errors: {
+          name: 'Name Feld muss mindestens 3 Zeichen lang sein',
+          email: 'Ungültige E-Mail -Adresse',
+          phone: 'Ungültige Telefonnummer',
+          message: 'Nachricht muss mindestens 10 Zeichen enthalten',
+          emailFail: 'Nachricht nicht gesendet'
+        },
+        success: 'Nachricht wurde senden!'
       }
     },
 
     services: {
       electric: {
-        title: 'Electrical installations',
-        first: 'Electrical installations for power supply',
-        second: 'Electrical installations for electrical distribution',
-        third: 'Electrical installations for interior, exterior and emergency lighting',
-        forth: 'Electrical installations for power sockets'
+        title: 'Elektrische Anlagen ',
+        first: 'Elektrische Anlagen für die Stromversorgung',
+        second: 'Elektrische Anlagen für die elektrische Verteilung',
+        third: 'Elektrische Anlagen für Innen-, Außen- und Sicherheitsbeleuchtung',
+        forth: 'Elektrische Anlagen für Steckdosen'
       },
       auto: {
-        title: 'Automation',
-        first: 'Industrial automation',
-        second: 'Building automation'
+        title: 'Automatisierung',
+        first: 'Industrielle Automatisierung',
+        second: 'Gebäudeautomation'
       },
       other: {
-        title: 'Other services',
-        first: 'Coordination on site for electrical installations',
-        second: 'Quality and extrajudicial technical expertise',
-        third: 'Verification of projects according to law'
+        title: 'Andere',
+        first: 'Koordination vor Ort für die Elektroinstallation',
+        second: 'Qualität und außergerichtlichen technische Expertise',
+        third: 'Prüfung der Projekte nach dem Gesetz'
       }
     }
   }

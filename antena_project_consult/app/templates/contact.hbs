@@ -9,25 +9,56 @@
                     <div class="spacer-20"></div>
                     <h2>{{t 'pages.contact.contactUs'}}</h2>
                     <div class="row">
+                        {{# if sendMail}}
+                            <div class="alert alert-success" role="alert">
+                                <h3>
+                                  {{t 'pages.contact.form.success'}}
+                                </h3>
+                            </div>
+                        {{/if}}
+
+                        {{# if sendMailError}}
+                            <div class="alert alert-danger" role="alert">
+                                <h3>
+                                  {{t 'pages.contact.errors.emailFail'}}
+                                </h3>
+                            </div>
+                        {{/if}}
                         <form method="post" id="contactform" name="contactform" class="contact-form clearfix">
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" id="name" name="name"  class="form-control input-lg" placeholder="{{t 'pages.contact.form.name'}}*">
+                                <div {{bind-attr class=":form-group nameError:has-error"}}>
+                                    <label class="control-label">{{t 'pages.contact.form.name'}}*</label>
+                                  {{input type="text" classNames="form-control input-lg" value=name}}
+                                    {{# if nameError}}
+                                        <span class="help-inline">{{t 'pages.contact.form.errors.name'}}</span>
+                                    {{/if}}
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" id="email" name="email"  class="form-control input-lg" placeholder="{{t 'pages.contact.form.email'}}*">
+                                <div {{bind-attr class=":form-group emailError:has-error"}}>
+                                    <label class="control-label">{{t 'pages.contact.form.email'}}*</label>
+                                    {{input type="email" classNames="form-control input-lg" value=email}}
+                                    {{# if emailError}}
+                                        <span class="help-inline">{{t 'pages.contact.form.errors.email'}}</span>
+                                    {{/if}}
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" id="phone" name="phone" class="form-control input-lg" placeholder="{{t 'pages.contact.form.telephone'}}">
+                                <div {{bind-attr class=":form-group phoneError:has-error"}}>
+                                    <label class="control-label">{{t 'pages.contact.form.telephone'}}*</label>
+                                  {{input type="email" classNames="form-control input-lg" value=phone}}
+                                    {{# if phoneError}}
+                                        <span class="help-inline">{{t 'pages.contact.form.errors.phone'}}</span>
+                                    {{/if}}
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea cols="6" rows="7" id="comments" name="comments" class="form-control input-lg" placeholder="{{t 'pages.contact.form.message'}}"></textarea>
+                                <div {{bind-attr class=":form-group messageError:has-error"}}>
+                                    <label class="control-label">{{t 'pages.contact.form.message'}}*</label>
+                                    {{textarea cols="6" rows="7" classNames="form-control input-lg" value=message}}
+                                    {{# if messageError}}
+                                        <span class="help-inline">{{t 'pages.contact.form.errors.message'}}</span>
+                                    {{/if}}
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <input id="submit" name="submit" type="submit" class="btn btn-primary btn-lg pull-right" value={{t 'pages.contact.form.send'}}>
+                                <button {{action 'sendMessage'}} class="btn btn-primary btn-lg pull-right">{{t 'pages.contact.form.send'}}</button>
                             </div>
                         </form>
                     </div>

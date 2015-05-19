@@ -2018,7 +2018,7 @@ h1.logo img{
 	background-color:#ccc;
 	background-repeat:no-repeat;
 	background-size:cover;
-	background-position:center center;
+	background-position:center 60%;
 	background-image: url("../images/P4261415.JPG");
 	border:0;
 }

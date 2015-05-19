@@ -40,7 +40,15 @@ export default {
         email: 'Email',
         telephone: 'Phone number',
         message: 'Message',
-        send: 'Send'
+        send: 'Send',
+        errors: {
+          name: 'Name field must contain at least 3 characters',
+          email: 'Invalid email address',
+          phone: 'Invalid phone number',
+          message: 'Message must contain at least 10 characters',
+          emailFail: 'Message failed to send'
+        },
+        success: 'Message has been sent!'
       }
     },
 

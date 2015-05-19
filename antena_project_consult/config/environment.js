@@ -5,10 +5,10 @@ module.exports = function(environment) {
     modulePrefix: 'antena-project-consult',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
 
     contentSecurityPolicy: {
-      'default-src': "'none'",
+      'default-src': "*",
       'script-src': "* 'unsafe-eval'",
       'font-src': "*",
       'connect-src': "*",
