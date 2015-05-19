@@ -23,6 +23,7 @@ export default {
 
   pages: {
     home: {
+      offeredServices: 'Servicii oferite',
       first: 'are ca principal obiect de activitate  lucrări de instalații electrice (cod CAEN 4321), proiectare și ' +
       'consultanta tehnica în acest domeniu (cod CAEN 7112).',
       second: 'a implementat  Sistemul de asigurare a calității conform ISO 9001:2008, Sistemul de management de mediu ' +

@@ -22,6 +22,7 @@ export default {
 
   pages: {
     home: {
+      offeredServices: 'Services offered',
       first: 'has implemented the following systems:',
       second: 'Quality Assurance System ISO 9001: 2008, Environmental Management System SR EN ISO 14001: 2005 (ISO ' +
       '14001: 2004), Occupational Safety and Health Management System according to OHSAS 18001: 2007.',

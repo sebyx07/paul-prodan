@@ -22,10 +22,14 @@ export default {
 
   pages: {
     home: {
+      offeredServices: 'Angebotene Leistungen',
       first: ' hat folgende Systeme implementiert:',
-      second: 'Qualitätssicherungssystem ISO 9001:2008',
-      third: 'Umweltmanagementsystem SR EN ISO 14001:2005 (ISO 14001:2004) Arbeitsschutzmanagementsystem ' +
-      'nach OHSAS 18001:2007'
+      second: 'Qualitätssicherungssystem ISO 9001:2008 Umweltmanagementsystem SR EN ISO 14001:2005' +
+      ' (ISO 14001:2004) Arbeitsschutzmanagementsystem ' +
+      'nach OHSAS 18001:2007',
+      third: 'Die Qualitätsgarantie der ausgeführten Arbeiten ' +
+      'wird von den erfahrenen Spezialisten von ATENA PROIECT CONSULT S.R.L- D. ' +
+      'gesichert, deren Professionalität ist in zahlreichen Zertifizierungen und Genehmigungen verankert.'
     },
 
     contact: {
