@@ -43,7 +43,7 @@ export default Ember.Controller.extend({
       var mailMessage = "De la: " + name + "    " +
           "Email: " + email + "    " +
           "Telefon: " + phone + "    " +
-          "Mesaj: " + "    " + message.replace(/<(?:.|\n)*?>/gm, '');;
+          "Mesaj: " + "    " + message.replace(/<(?:.|\n)*?>/gm, '');
 
       Ember.$.ajax({
         type: 'POST',
@@ -72,7 +72,7 @@ export default Ember.Controller.extend({
         self.set('sendMailError', false);
       })
      .fail(function(){
-          self.set('sendMailError', true)
+          self.set('sendMailError', true);
         });
     }
   }
