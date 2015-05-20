@@ -59,7 +59,8 @@ export default {
         first: 'Electrical installations for power supply',
         second: 'Electrical installations for electrical distribution',
         third: 'Electrical installations for interior, exterior and emergency lighting',
-        forth: 'Electrical installations for power sockets'
+        forth: 'Electrical installations for power sockets',
+        fifth: 'Electrical installations for protection'
       },
       auto: {
         title: 'Automation',

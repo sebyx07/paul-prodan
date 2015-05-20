@@ -6,7 +6,7 @@
           <div class="row text-justify">
               <div class="col-sm-12">
                   <h2 class="text-left">ATENA PROIECT CONSULT S.R.L.-D</h2>
-                  <p>{{t 'pages.home.first'}} {{t 'pages.home.second'}}</p>
+                  <p>{{t 'pages.home.first'}}{{t 'pages.home.second'}}</p>
                   <hr/>
               </div>
           </div>
@@ -14,23 +14,17 @@
           <div class="row">
               <h3 class="text-center">{{t 'pages.home.offeredServices'}}</h3>
 
-              {{#link-to 'pages.services.electric' classNames="col-md-4 col-sm-6"}}
-                  <div class="icon-block"><span class="icon label-info"><i class="fa fa-bolt"></i></span>
-                      <h3>{{t 'pages.services.electric.title'}}</h3>
-                  </div>
+              {{#link-to 'pages.services.electric' classNames="col-md-4 col-sm-6 text-center"}}
+                  <h2>{{t 'pages.services.electric.title'}}</h2>
               {{/link-to}}
 
-            {{#link-to 'pages.services.auto' classNames="col-md-4 col-sm-6"}}
-                <div class="icon-block"><span class="icon label-danger"><i class="fa fa-cogs"></i></span>
-                    <h3>{{t 'pages.services.auto.title'}}</h3>
-                </div>
-            {{/link-to}}
+              {{#link-to 'pages.services.auto' classNames="col-md-4 col-sm-6 text-center"}}
+                  <h2>{{t 'pages.services.auto.title'}}</h2>
+              {{/link-to}}
 
-            {{#link-to 'pages.services.auto' classNames="col-md-4 col-sm-6"}}
-                <div class="icon-block"><span class="icon label-success"><i class="fa fa-plug"></i></span>
-                    <h3>{{t 'pages.services.other.title'}}</h3>
-                </div>
-            {{/link-to}}
+              {{#link-to 'pages.services.others' classNames="col-md-4 col-sm-6 text-center"}}
+                  <h2>{{t 'pages.services.other.title'}}</h2>
+              {{/link-to}}
 
               <hr/>
               <p class="lead text-justify">{{t 'pages.home.third'}}</p>

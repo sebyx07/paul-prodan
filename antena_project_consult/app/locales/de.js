@@ -15,9 +15,9 @@ export default {
 
   slider: {
     first: 'ÜBER UNS',
-    second: 'ATENA PROIECT CONSULT S.R.L.-D',
-    third: 'ist die Konstruktion von elektrischen Anlagen (NACE-Code 4321), sowie Engineering-',
-    forth: 'Aktivitäten und zugehörige technische Beratung (NACE-Code 7112).'
+    second: 'Die Haupttätigkeit von ATENA PROIECT CONSULT S.R.L.-D',
+    third: 'ist die Konstruktion von elektrischen Anlagen (NACE-Code 4321), sowie Engineering-Aktivitäten',
+    forth: 'und zugehörige technische Beratung (NACE-Code 7112).'
   },
 
   pages: {
@@ -61,7 +61,8 @@ export default {
         first: 'Elektrische Anlagen für die Stromversorgung',
         second: 'Elektrische Anlagen für die elektrische Verteilung',
         third: 'Elektrische Anlagen für Innen-, Außen- und Sicherheitsbeleuchtung',
-        forth: 'Elektrische Anlagen für Steckdosen'
+        forth: 'Elektrische Anlagen für Steckdosen',
+        fifth: 'Elektrische Anlagen für den Schutz'
       },
       auto: {
         title: 'Automatisierung',

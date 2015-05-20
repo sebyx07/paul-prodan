@@ -24,8 +24,7 @@ export default {
   pages: {
     home: {
       offeredServices: 'Servicii oferite',
-      first: 'are ca principal obiect de activitate  lucrări de instalații electrice (cod CAEN 4321), proiectare și ' +
-      'consultanta tehnica în acest domeniu (cod CAEN 7112).',
+      first: ' ',
       second: 'a implementat  Sistemul de asigurare a calității conform ISO 9001:2008, Sistemul de management de mediu ' +
       'SR EN ISO 14001:2005 (ISO 14001:2004) și Sistemul de management al securității și sănătății ocupaționale conform ' +
       'CHSAS 18001:2007.',
@@ -60,9 +59,10 @@ export default {
       electric: {
         title: 'Instalații electrice',
         first: 'Instalații electrice de alimentare cu energie electrică',
-        second: 'Instalații electrice de iluminat interior, exterior şi de siguranţă',
-        third: 'Instalații electrice de prize şi forţă',
-        forth: 'Instalații electrice de protecție'
+        second: 'Instalații electrice de distribuţie a energiei electrice;',
+        third: 'Instalații electrice de iluminat interior, exterior şi de siguranţă',
+        forth: 'Instalații electrice de prize şi forţă',
+        fifth: 'Instalații electrice de protecție'
       },
       auto: {
         title: 'Automatizări',
